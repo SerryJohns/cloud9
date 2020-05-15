@@ -3,10 +3,10 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv --cov=myrepolib tests/*.py
-	python -m pytest --nbval notebook.ipynb
+	# python -m pytest -vv --cov=myrepolib tests/*.py
+	# pyth on -m pytest --nbval notebook.ipynb
 	
 lint:
-	pylint --disable=R, C hello.py
+	pylint --disable=R, hello.py
 	
 all: install lint test
